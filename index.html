@@ -1,32 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portifolio - Genivaldo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Genivaldo Serra - Especialista em Engenharia de Dados & DevOps. Veja projetos práticos com Python, Airflow, Docker, Kubernetes e muito mais.">
+    <title>Genivaldo Serra | Engenharia de Dados & DevOps</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Menu -->
-  <nav id="navbar">
-    <div id="navbar-container">
-      <h1 class="logo">Genivaldo Serra</h1>
-      <ul id="navbar-itens">
-        <li>Início</li>
-        <li>Sobre</li>
-        <li>Tecnologias</li>
-      </ul>
-    </div>
-  </nav>
 
-  <!-- Cabeçalho -->
-  <head id="showcase">
-    <div id="showcase-container">
-      <h2>Lorem ipsum dolor sit amet.</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, consectetur!</p>
-      <a href="#" class="btn" title="teste"></a>
-    </div>
-  </head>
-  
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="#hero" class="navbar__brand">
+                <span class="navbar__brand-icon">⚡</span>
+                <span>Genivaldo Serra</span>
+            </a>
+            <nav class="navbar__links" aria-label="Navegação principal">
+                <a href="#sobre" class="navbar__link">Sobre</a>
+                <a href="#dados" class="navbar__link">Engenharia de Dados</a>
+                <a href="#devops" class="navbar__link">DevOps</a>
+                <a href="#contato" class="navbar__link navbar__link--cta">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <p class="hero__greeting">Olá! 👋</p>
+                <h1 class="hero__title">Bem-vindo ao meu<br><span class="hero__title-highlight">portfólio</span></h1>
+                <p class="hero__subtitle">
+                    Especializado em <strong>Engenharia de Dados</strong> e <strong>DevOps</strong>,<br>
+                    transformando dados em insights e infraestrutura em eficiência.
+                </p>
+                <div class="hero__ctas">
+                    <a href="#dados" class="btn btn--primary" id="cta-ver-projetos">Ver Projetos</a>
+                    <a href="#contato" class="btn btn--outline" id="cta-contato">Contato</a>
+                </div>
+            </div>
+            <div class="hero__visual" aria-hidden="true">
+                <div class="hero__blob">
+                    <div class="hero__code-block">
+                        <span class="code-line"><span class="code-keyword">def</span> <span class="code-fn">pipeline</span>(data):</span>
+                        <span class="code-line">  df = <span class="code-fn">ingest</span>(data)</span>
+                        <span class="code-line">  df = <span class="code-fn">transform</span>(df)</span>
+                        <span class="code-line">  <span class="code-keyword">return</span> <span class="code-fn">load</span>(df)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator" aria-hidden="true">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="sobre" id="sobre">
+        <div class="container sobre__inner">
+            <div class="sobre__badge">Sobre Mim</div>
+            <h2 class="sobre__title">Quem está por trás dos dados e da infra</h2>
+            <p class="sobre__text">
+                Sou um profissional apaixonado por tecnologia com experiência em <strong>Engenharia de Dados</strong> e <strong>DevOps</strong>. 
+                Construo pipelines de dados robustos e escaláveis, além de automatizar infraestruturas modernas com práticas de IaC e CI/CD. 
+                Meu foco é transformar dados brutos em insights acionáveis e tornar ambientes de produção mais resilientes e eficientes.
+            </p>
+            <div class="sobre__skills">
+                <div class="sobre__skill-group">
+                    <h3 class="sobre__skill-title">🗄️ Engenharia de Dados</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Apache Airflow</span>
+                        <span class="tag">dbt</span>
+                        <span class="tag">Spark</span>
+                        <span class="tag">Snowflake</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="sobre__skill-group">
+                    <h3 class="sobre__skill-title">⚙️ DevOps</h3>
+                    <div class="tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ENGENHARIA DE DADOS ========== -->
+    <section class="projects" id="dados">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header__badge">Engenharia de Dados</div>
+                <h2 class="section-header__title">Projetos de Dados</h2>
+                <p class="section-header__desc">Pipelines, transformações e arquiteturas de dados construídas para escalar.</p>
+            </div>
+            <div class="projects__grid">
+
+                <!-- Card 1 -->
+                <article class="card" id="projeto-dados-1">
+                    <div class="card__header">
+                        <h3 class="card__title">Pipeline de Ingestão com Airflow</h3>
+                        <span class="badge badge--green">Apache Airflow</span>
+                    </div>
+                    <p class="card__desc">
+                        Pipeline de ingestão de dados multi-fonte (APIs REST, bancos relacionais e arquivos CSV) orquestrado com Apache Airflow. 
+                        Implementa retries, alertas por email e monitoramento de SLA para garantir a confiabilidade dos dados.
+                    </p>
+                    <div class="tags card__tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Airflow</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                    <a href="https://github.com/genivaldoserra" target="_blank" rel="noopener noreferrer" class="card__link" id="link-dados-1">
+                        Ver no GitHub <span class="card__link-arrow">→</span>
+                    </a>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card" id="projeto-dados-2">
+                    <div class="card__header">
+                        <h3 class="card__title">Data Warehouse com dbt + Snowflake</h3>
+                        <span class="badge badge--blue">dbt</span>
+                    </div>
+                    <p class="card__desc">
+                        Modelagem de um Data Warehouse dimensional utilizando dbt para transformações e Snowflake como engine analítico. 
+                        Inclui testes de qualidade, documentação automática e camadas Bronze/Silver/Gold para governança de dados.
+                    </p>
+                    <div class="tags card__tags">
+                        <span class="tag">dbt</span>
+                        <span class="tag">Snowflake</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Git</span>
+                    </div>
+                    <a href="https://github.com/genivaldoserra" target="_blank" rel="noopener noreferrer" class="card__link" id="link-dados-2">
+                        Ver no GitHub <span class="card__link-arrow">→</span>
+                    </a>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card" id="projeto-dados-3">
+                    <div class="card__header">
+                        <h3 class="card__title">Processamento com PySpark na AWS</h3>
+                        <span class="badge badge--orange">Apache Spark</span>
+                    </div>
+                    <p class="card__desc">
+                        Jobs de processamento de grandes volumes de dados utilizando PySpark em cluster EMR na AWS. 
+                        Consome dados do S3, realiza agregações complexas e salva resultados particionados em Parquet para consultas eficientes.
+                    </p>
+                    <div class="tags card__tags">
+                        <span class="tag">PySpark</span>
+                        <span class="tag">AWS EMR</span>
+                        <span class="tag">S3</span>
+                        <span class="tag">Parquet</span>
+                    </div>
+                    <a href="https://github.com/genivaldoserra" target="_blank" rel="noopener noreferrer" class="card__link" id="link-dados-3">
+                        Ver no GitHub <span class="card__link-arrow">→</span>
+                    </a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DEVOPS ========== -->
+    <section class="projects projects--alt" id="devops">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header__badge">DevOps</div>
+                <h2 class="section-header__title">Projetos de Infraestrutura</h2>
+                <p class="section-header__desc">Automação, containers e infraestrutura como código para ambientes modernos.</p>
+            </div>
+            <div class="projects__grid">
+
+                <!-- Card 4 -->
+                <article class="card" id="projeto-devops-1">
+                    <div class="card__header">
+                        <h3 class="card__title">Cluster Kubernetes com Terraform</h3>
+                        <span class="badge badge--purple">Kubernetes</span>
+                    </div>
+                    <p class="card__desc">
+                        Provisionamento de cluster Kubernetes gerenciado (EKS) na AWS usando Terraform com módulos reutilizáveis. 
+                        Inclui configuração de RBAC, Ingress Controller, auto-scaling de nodes e monitoramento com Prometheus e Grafana.
+                    </p>
+                    <div class="tags card__tags">
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">AWS EKS</span>
+                        <span class="tag">Helm</span>
+                    </div>
+                    <a href="https://github.com/genivaldoserra" target="_blank" rel="noopener noreferrer" class="card__link" id="link-devops-1">
+                        Ver no GitHub <span class="card__link-arrow">→</span>
+                    </a>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card" id="projeto-devops-2">
+                    <div class="card__header">
+                        <h3 class="card__title">CI/CD Pipeline com GitHub Actions</h3>
+                        <span class="badge badge--green">GitHub Actions</span>
+                    </div>
+                    <p class="card__desc">
+                        Pipeline de CI/CD completo para aplicação containerizada com Docker. Automatiza build, testes, scan de segurança e deploy 
+                        para ambientes de staging e produção. Inclui rollback automático e notificações por Slack em caso de falha.
+                    </p>
+                    <div class="tags card__tags">
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Trivy</span>
+                        <span class="tag">AWS ECR</span>
+                    </div>
+                    <a href="https://github.com/genivaldoserra" target="_blank" rel="noopener noreferrer" class="card__link" id="link-devops-2">
+                        Ver no GitHub <span class="card__link-arrow">→</span>
+                    </a>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card" id="projeto-devops-3">
+                    <div class="card__header">
+                        <h3 class="card__title">Observabilidade com Prometheus & Grafana</h3>
+                        <span class="badge badge--red">Prometheus</span>
+                    </div>
+                    <p class="card__desc">
+                        Stack completa de observabilidade para microsserviços em Kubernetes. Configuração de Prometheus para coleta de métricas, 
+                        Grafana para dashboards customizados e Alertmanager para alertas inteligentes baseados em thresholds e anomalias.
+                    </p>
+                    <div class="tags card__tags">
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">Alertmanager</span>
+                        <span class="tag">Kubernetes</span>
+                    </div>
+                    <a href="https://github.com/genivaldoserra" target="_blank" rel="noopener noreferrer" class="card__link" id="link-devops-3">
+                        Ver no GitHub <span class="card__link-arrow">→</span>
+                    </a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section class="contato" id="contato">
+        <div class="container contato__inner">
+            <div class="section-header">
+                <div class="section-header__badge">Contato</div>
+                <h2 class="section-header__title">Vamos conversar?</h2>
+                <p class="section-header__desc">Aberto a oportunidades, colaborações e novos projetos.</p>
+            </div>
+            <div class="contato__links">
+                <a href="mailto:genivaldo@example.com" class="contato__btn" id="link-email" aria-label="Enviar email">
+                    <span class="contato__btn-icon">✉️</span>
+                    <span>Email</span>
+                </a>
+                <a href="https://github.com/genivaldoserra" target="_blank" rel="noopener noreferrer" class="contato__btn" id="link-github" aria-label="Perfil no GitHub">
+                    <span class="contato__btn-icon">🐙</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/genivaldoserra" target="_blank" rel="noopener noreferrer" class="contato__btn" id="link-linkedin" aria-label="Perfil no LinkedIn">
+                    <span class="contato__btn-icon">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copy">© <span id="year"></span> Genivaldo Serra. Todos os direitos reservados.</p>
+            <p class="footer__stack">Feito com HTML & CSS puro ⚡</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
 </body>
 </html>
