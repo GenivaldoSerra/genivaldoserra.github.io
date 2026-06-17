@@ -742,11 +742,28 @@ section {
     padding: 90px 0;
 }
 
+.certificacoes__carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
 .certificacoes__grid {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 48px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.certificacoes__grid::-webkit-scrollbar {
+    display: none;
 }
 
 .certificacoes__link {
@@ -763,6 +780,8 @@ section {
     color: var(--color-text-main);
     max-width: 300px;
     width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
 }
 
 .certificacoes__link:hover {
@@ -790,6 +809,53 @@ section {
     line-height: 1.4;
 }
 
+.certificacoes__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.certificacoes__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--color-bg-white);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-full, 50%);
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+    transition: background var(--transition-speed) ease,
+                color var(--transition-speed) ease,
+                transform var(--transition-speed) ease;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.certificacoes__btn:hover:not(:disabled) {
+    background: var(--color-primary);
+    color: var(--color-bg-white);
+    transform: scale(1.1);
+}
+
+.certificacoes__btn:focus-visible {
+    box-shadow: 0 0 0 3px var(--color-primary-light, rgba(37, 99, 235, 0.3));
+}
+
+.certificacoes__btn:disabled {
+    cursor: default;
+    opacity: 0.35;
+    border-color: #cbd5e1;
+    color: #94a3b8;
+}
+
 @media (max-width: 768px) {
     .certificacoes__grid {
         gap: 24px;
@@ -802,5 +868,15 @@ section {
 
     .certificacoes__badge-img {
         max-width: 180px;
+    }
+
+    .certificacoes__btn {
+        width: 44px;
+        height: 44px;
+        font-size: 1.5rem;
+    }
+
+    .certificacoes__controls {
+        margin-top: 24px;
     }
 }

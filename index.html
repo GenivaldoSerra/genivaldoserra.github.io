@@ -103,7 +103,8 @@
                 <h2 class="section-header__title">Credenciais Profissionais</h2>
                 <p class="section-header__desc">Certificações validadas por instituições reconhecidas do mercado.</p>
             </div>
-            <div class="certificacoes__grid">
+            <div class="certificacoes__carousel-wrapper">
+                <div class="certificacoes__grid">
                 <a href="https://www.credly.com/badges/b77c83cd-86c7-4ac0-83f5-83ff4168aabe/public_url" target="_blank" rel="noopener noreferrer" class="certificacoes__link" id="badge-airflow">
                     <img src="assets/badges/astronomer-certification-for-apache-airflow-3-funda.png" alt="Astronomer Certification for Apache Airflow 3 Fundamentals" class="certificacoes__badge-img">
                     <span class="certificacoes__label">Astronomer — Apache Airflow 3 Fundamentals</span>
@@ -112,6 +113,23 @@
                     <img src="assets/badges/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner" class="certificacoes__badge-img">
                     <span class="certificacoes__label">AWS — Certified Cloud Practitioner</span>
                 </a>
+                <a href="https://www.credential.net/0eb46fc3-46a1-4e94-b034-47536ee4ec32" target="_blank" rel="noopener noreferrer" class="certificacoes__link" id="badge-databricks">
+                    <img src="assets/badges/databricks-fundamentals.png" alt="Academy Accreditation - Databricks Fundamentals" class="certificacoes__badge-img">
+                    <span class="certificacoes__label">Databricks — Fundamentals</span>
+                </a>
+                <a href="https://credentials.getdbt.com/715c9bb2-d3cf-4a49-b707-e9cbb122cc8b#acc.1MKcXS2d" target="_blank" rel="noopener noreferrer" class="certificacoes__link" id="badge-dbt">
+                    <img src="assets/badges/dbt-Fundamentals.png" alt="dbt Fundamentals" class="certificacoes__badge-img">
+                    <span class="certificacoes__label">dbt — Fundamentals</span>
+                </a>
+                    <a href="https://achieve.snowflake.com/e7f77d61-c2d7-4741-bfe8-ba9a822f601a#acc.obG0HdiV" target="_blank" rel="noopener noreferrer" class="certificacoes__link" id="badge-snowflake">
+                    <img src="assets/badges/snowflake.png" alt="Snowflake - Hands-On Essentials: Data Warehousing Workshop" class="certificacoes__badge-img">
+                    <span class="certificacoes__label">Hands-On Essentials: Data Warehousing Workshop</span>
+                </a>
+            </div>
+            </div>
+            <div class="certificacoes__controls" aria-label="Controles do carrossel de certificações">
+                <button class="certificacoes__btn certificacoes__btn--prev" aria-label="Credencial anterior">&#8249;</button>
+                <button class="certificacoes__btn certificacoes__btn--next" aria-label="Próxima credencial">&#8250;</button>
             </div>
         </div>
     </section>
@@ -305,6 +323,38 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        /* ---------- Carrossel de Certificações ---------- */
+        (function () {
+            var grid    = document.querySelector('.certificacoes__grid');
+            var prevBtn = document.querySelector('.certificacoes__btn--prev');
+            var nextBtn = document.querySelector('.certificacoes__btn--next');
+            if (!grid || !prevBtn || !nextBtn) return;
+
+            var item = grid.querySelector('.certificacoes__link');
+            var gap  = parseInt(getComputedStyle(grid).gap || 48, 10);
+            var step = item ? item.offsetWidth + gap : 348;
+
+            function updateButtons() {
+                var maxScroll = grid.scrollWidth - grid.clientWidth;
+                prevBtn.disabled = grid.scrollLeft <= 1;
+                nextBtn.disabled = grid.scrollLeft >= maxScroll - 1;
+                prevBtn.style.opacity = prevBtn.disabled ? '0.35' : '1';
+                nextBtn.style.opacity = nextBtn.disabled ? '0.35' : '1';
+            }
+
+            grid.addEventListener('scroll', updateButtons);
+            window.addEventListener('resize', updateButtons);
+
+            prevBtn.addEventListener('click', function () {
+                grid.scrollBy({ left: -step, behavior: 'smooth' });
+            });
+            nextBtn.addEventListener('click', function () {
+                grid.scrollBy({ left: step, behavior: 'smooth' });
+            });
+
+            updateButtons();
+        })();
     </script>
 
 </body>
