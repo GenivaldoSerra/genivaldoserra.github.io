@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Genivaldo Serra - Especialista em Engenharia de Dados & DevOps. Veja projetos práticos com Python, Airflow, Docker, Kubernetes e muito mais.">
-    <title>Genivaldo Serra | Engenharia de Dados & DevOps</title>
+    <meta name="description" content="Portfólio de Genivaldo Serra - DevOps com experiência e Engenharia de Dados em evolução. Veja projetos práticos com Python, Airflow, Docker, Kubernetes e muito mais.">
+    <title>Genivaldo Serra | DevOps & Engenharia de Dados</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -20,8 +20,8 @@
             <nav class="navbar__links" aria-label="Navegação principal">
                 <a href="#sobre" class="navbar__link">Sobre</a>
                 <a href="#certificacoes" class="navbar__link">Certificações</a>
-                <a href="#dados" class="navbar__link">Engenharia de Dados</a>
                 <a href="#devops" class="navbar__link">DevOps</a>
+                <a href="#dados" class="navbar__link">Engenharia de Dados</a>
                 <a href="#contato" class="navbar__link navbar__link--cta">Contato</a>
             </nav>
         </div>
@@ -34,11 +34,11 @@
                 <p class="hero__greeting">Olá! 👋</p>
                 <h1 class="hero__title">Bem-vindo ao meu<br><span class="hero__title-highlight">portfólio</span></h1>
                 <p class="hero__subtitle">
-                    Especializado em <strong>Engenharia de Dados</strong> e <strong>DevOps</strong>,<br>
-                    transformando dados em insights e infraestrutura em eficiência.
+                    Profissional com experiência em <strong>DevOps</strong> e em desenvolvimento na área de <strong>Engenharia de Dados</strong>,<br>
+                    transformando infraestrutura em eficiência e dados em insights acionáveis.
                 </p>
                 <div class="hero__ctas">
-                    <a href="#dados" class="btn btn--primary" id="cta-ver-projetos">Ver Projetos</a>
+                    <a href="#devops" class="btn btn--primary" id="cta-ver-projetos">Ver Projetos</a>
                     <a href="#contato" class="btn btn--outline" id="cta-contato">Contato</a>
                 </div>
             </div>
@@ -62,24 +62,13 @@
     <section class="sobre" id="sobre">
         <div class="container sobre__inner">
             <div class="sobre__badge">Sobre Mim</div>
-            <h2 class="sobre__title">Quem está por trás dos dados e da infra</h2>
+            <h2 class="sobre__title">Quem está por trás da infra e dos dados</h2>
             <p class="sobre__text">
-                Sou um profissional apaixonado por tecnologia com experiência em <strong>Engenharia de Dados</strong> e <strong>DevOps</strong>. 
-                Construo pipelines de dados robustos e escaláveis, além de automatizar infraestruturas modernas com práticas de IaC e CI/CD. 
-                Meu foco é transformar dados brutos em insights acionáveis e tornar ambientes de produção mais resilientes e eficientes.
+                Sou um profissional apaixonado por tecnologia com experiência em <strong>DevOps</strong> e em desenvolvimento na área de <strong>Engenharia de Dados</strong>.
+                Automatizo infraestruturas modernas com práticas de IaC e CI/CD, além de construir pipelines de dados robustos e escaláveis.
+                Meu foco principal é tornar ambientes de produção mais resilientes e eficientes, enquanto evoluo na transformação de dados brutos em insights acionáveis.
             </p>
             <div class="sobre__skills">
-                <div class="sobre__skill-group">
-                    <h3 class="sobre__skill-title">🗄️ Engenharia de Dados</h3>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Apache Airflow</span>
-                        <span class="tag">dbt</span>
-                        <span class="tag">Spark</span>
-                        <span class="tag">Snowflake</span>
-                        <span class="tag">PostgreSQL</span>
-                    </div>
-                </div>
                 <div class="sobre__skill-group">
                     <h3 class="sobre__skill-title">⚙️ DevOps</h3>
                     <div class="tags">
@@ -89,6 +78,17 @@
                         <span class="tag">GitHub Actions</span>
                         <span class="tag">Prometheus</span>
                         <span class="tag">AWS</span>
+                    </div>
+                </div>
+                <div class="sobre__skill-group">
+                    <h3 class="sobre__skill-title">🗄️ Engenharia de Dados</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Apache Airflow</span>
+                        <span class="tag">dbt</span>
+                        <span class="tag">Spark</span>
+                        <span class="tag">Snowflake</span>
+                        <span class="tag">PostgreSQL</span>
                     </div>
                 </div>
             </div>
@@ -134,15 +134,98 @@
         </div>
     </section>
 
+    <!-- ========== DEVOPS ========== -->
+    <section class="projects" id="devops">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header__badge">DevOps</div>
+                <h2 class="section-header__title">Projetos de Infraestrutura</h2>
+                <p class="section-header__desc">Automação, containers e infraestrutura como código para ambientes modernos.</p>
+            </div>
+            <div class="projects__carousel-wrapper">
+                <div class="projects__grid">
+
+                <!-- Card 4 -->
+                <article class="card" id="Infraestrutura AWS com Terraform">
+                    <div class="card__header">
+                        <h3 class="card__title">Infraestrutura AWS com Terraform</h3>
+                        <span class="badge badge--purple">Terraform</span>
+                    </div>
+                    <p class="card__desc">
+                        Construção de infraestrutura simples AWS utilizando Terraform. 
+                    </p>
+                    <div class="tags card__tags">
+                        <span class="tag">Terraform</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">GitHub</span>
+                    </div>
+                    <a href="https://github.com/GenivaldoSerra/aws-infra-terraform" target="_blank" rel="noopener noreferrer" class="card__link" id="link-devops-1">
+                        Ver no GitHub <span class="card__link-arrow">→</span>
+                    </a>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card" id="Terraform & Docker">
+                    <div class="card__header">
+                        <h3 class="card__title">Terraform & Docker</h3>
+                        <span class="badge badge--green">Terraform</span>
+                    </div>
+                    <p class="card__desc">
+                        Criação de uma stack completa com backend, frontend, banco postgresql e monitoramento com prometheus e grafana utilizando terraform.
+                    </p>
+                    <div class="tags card__tags">
+                        <span class="tag">GitHub</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">Prometheus</span>
+                    </div>
+                    <a href="https://github.com/GenivaldoSerra/terraform-docker" target="_blank" rel="noopener noreferrer" class="card__link" id="link-devops-2">
+                        Ver no GitHub <span class="card__link-arrow">→</span>
+                    </a>
+                </article>
+
+                <!-- Card 6 -->
+                <!-- <article class="card" id="  projeto-devops-3">
+                    <div class="card__header">
+                        <h3 class="card__title">Observabilidade com Prometheus & Grafana</h3>
+                        <span class="badge badge--red">Prometheus</span>
+                    </div>
+                    <p class="card__desc">
+                        Stack completa de observabilidade para microsserviços em Kubernetes. Configuração de Prometheus para coleta de métricas, 
+                        Grafana para dashboards customizados e Alertmanager para alertas inteligentes baseados em thresholds e anomalias.
+                    </p>
+                    <div class="tags card__tags">
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">Alertmanager</span>
+                        <span class="tag">Kubernetes</span>
+                    </div>
+                    <a href="https://github.com/genivaldoserra" target="_blank" rel="noopener noreferrer" class="card__link" id="link-devops-3">
+                        Ver no GitHub <span class="card__link-arrow">→</span>
+                    </a>
+                </article> -->
+
+                </div>
+            </div>
+            <div class="projects__controls" aria-label="Controles do carrossel de projetos DevOps">
+                <button class="projects__btn projects__btn--prev" aria-label="Projeto anterior">&#8249;</button>
+                <button class="projects__btn projects__btn--next" aria-label="Próximo projeto">&#8250;</button>
+            </div>
+        </div>
+    </section>
+
     <!-- ========== ENGENHARIA DE DADOS ========== -->
-    <section class="projects" id="dados">
+    <section class="projects projects--alt" id="dados">
         <div class="container">
             <div class="section-header">
                 <div class="section-header__badge">Engenharia de Dados</div>
                 <h2 class="section-header__title">Projetos de Dados</h2>
                 <p class="section-header__desc">Pipelines, transformações e arquiteturas de dados construídas para escalar.</p>
             </div>
-            <div class="projects__grid">
+            <div class="projects__carousel-wrapper">
+                <div class="projects__grid">
 
                 <!-- Card 1 -->
                 <article class="card" id="projeto-dados-1">
@@ -207,82 +290,11 @@
                     </a>
                 </article>
 
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ========== DEVOPS ========== -->
-    <section class="projects projects--alt" id="devops">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-header__badge">DevOps</div>
-                <h2 class="section-header__title">Projetos de Infraestrutura</h2>
-                <p class="section-header__desc">Automação, containers e infraestrutura como código para ambientes modernos.</p>
-            </div>
-            <div class="projects__grid">
-
-                <!-- Card 4 -->
-                <article class="card" id="Infraestrutura AWS com Terraform">
-                    <div class="card__header">
-                        <h3 class="card__title">Infraestrutura AWS com Terraform</h3>
-                        <span class="badge badge--purple">Terraform</span>
-                    </div>
-                    <p class="card__desc">
-                        Construção de infraestrutura simples AWS utilizando Terraform. 
-                    </p>
-                    <div class="tags card__tags">
-                        <span class="tag">Terraform</span>
-                        <span class="tag">AWS</span>
-                        <span class="tag">GitHub</span>
-                    </div>
-                    <a href="https://github.com/GenivaldoSerra/aws-infra-terraform" target="_blank" rel="noopener noreferrer" class="card__link" id="link-devops-1">
-                        Ver no GitHub <span class="card__link-arrow">→</span>
-                    </a>
-                </article>
-
-                <!-- Card 5 -->
-                <article class="card" id="Terraform & Docker">
-                    <div class="card__header">
-                        <h3 class="card__title">Terraform & Docker</h3>
-                        <span class="badge badge--green">Terraform</span>
-                    </div>
-                    <p class="card__desc">
-                        Criação de uma stack completa com backend, frontend, banco postgresql e monitoramento com prometheus e grafana utilizando terraform.
-                    </p>
-                    <div class="tags card__tags">
-                        <span class="tag">GitHub</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">Terraform</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">Grafana</span>
-                        <span class="tag">Prometheus</span>
-                    </div>
-                    <a href="https://github.com/GenivaldoSerra/terraform-docker" target="_blank" rel="noopener noreferrer" class="card__link" id="link-devops-2">
-                        Ver no GitHub <span class="card__link-arrow">→</span>
-                    </a>
-                </article>
-
-                <!-- Card 6 -->
-                <!-- <article class="card" id="  projeto-devops-3">
-                    <div class="card__header">
-                        <h3 class="card__title">Observabilidade com Prometheus & Grafana</h3>
-                        <span class="badge badge--red">Prometheus</span>
-                    </div>
-                    <p class="card__desc">
-                        Stack completa de observabilidade para microsserviços em Kubernetes. Configuração de Prometheus para coleta de métricas, 
-                        Grafana para dashboards customizados e Alertmanager para alertas inteligentes baseados em thresholds e anomalias.
-                    </p>
-                    <div class="tags card__tags">
-                        <span class="tag">Prometheus</span>
-                        <span class="tag">Grafana</span>
-                        <span class="tag">Alertmanager</span>
-                        <span class="tag">Kubernetes</span>
-                    </div>
-                    <a href="https://github.com/genivaldoserra" target="_blank" rel="noopener noreferrer" class="card__link" id="link-devops-3">
-                        Ver no GitHub <span class="card__link-arrow">→</span>
-                    </a>
-                </article> -->
-
+            <div class="projects__controls" aria-label="Controles do carrossel de projetos de dados">
+                <button class="projects__btn projects__btn--prev" aria-label="Projeto anterior">&#8249;</button>
+                <button class="projects__btn projects__btn--next" aria-label="Próximo projeto">&#8250;</button>
             </div>
         </div>
     </section>
@@ -323,36 +335,46 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        /* ---------- Carrossel de Certificações ---------- */
+        /* ---------- Carrossel Genérico ---------- */
         (function () {
-            var grid    = document.querySelector('.certificacoes__grid');
-            var prevBtn = document.querySelector('.certificacoes__btn--prev');
-            var nextBtn = document.querySelector('.certificacoes__btn--next');
-            if (!grid || !prevBtn || !nextBtn) return;
+            function initCarousel(gridSelector, prevSelector, nextSelector, defaultStep) {
+                var grids = document.querySelectorAll(gridSelector);
+                var prevBtns = document.querySelectorAll(prevSelector);
+                var nextBtns = document.querySelectorAll(nextSelector);
 
-            var item = grid.querySelector('.certificacoes__link');
-            var gap  = parseInt(getComputedStyle(grid).gap || 48, 10);
-            var step = item ? item.offsetWidth + gap : 348;
+                for (var i = 0; i < grids.length; i++) {
+                    (function(grid, prevBtn, nextBtn) {
+                        if (!grid || !prevBtn || !nextBtn) return;
 
-            function updateButtons() {
-                var maxScroll = grid.scrollWidth - grid.clientWidth;
-                prevBtn.disabled = grid.scrollLeft <= 1;
-                nextBtn.disabled = grid.scrollLeft >= maxScroll - 1;
-                prevBtn.style.opacity = prevBtn.disabled ? '0.35' : '1';
-                nextBtn.style.opacity = nextBtn.disabled ? '0.35' : '1';
+                        var item = grid.querySelector('a, article');
+                        var gap = parseInt(getComputedStyle(grid).gap || 28, 10);
+                        var step = item ? item.offsetWidth + gap : (defaultStep || 360);
+
+                        function updateButtons() {
+                            var maxScroll = grid.scrollWidth - grid.clientWidth;
+                            prevBtn.disabled = grid.scrollLeft <= 1;
+                            nextBtn.disabled = grid.scrollLeft >= maxScroll - 1;
+                            prevBtn.style.opacity = prevBtn.disabled ? '0.35' : '1';
+                            nextBtn.style.opacity = nextBtn.disabled ? '0.35' : '1';
+                        }
+
+                        grid.addEventListener('scroll', updateButtons);
+                        window.addEventListener('resize', updateButtons);
+
+                        prevBtn.addEventListener('click', function () {
+                            grid.scrollBy({ left: -step, behavior: 'smooth' });
+                        });
+                        nextBtn.addEventListener('click', function () {
+                            grid.scrollBy({ left: step, behavior: 'smooth' });
+                        });
+
+                        updateButtons();
+                    })(grids[i], prevBtns[i], nextBtns[i]);
+                }
             }
 
-            grid.addEventListener('scroll', updateButtons);
-            window.addEventListener('resize', updateButtons);
-
-            prevBtn.addEventListener('click', function () {
-                grid.scrollBy({ left: -step, behavior: 'smooth' });
-            });
-            nextBtn.addEventListener('click', function () {
-                grid.scrollBy({ left: step, behavior: 'smooth' });
-            });
-
-            updateButtons();
+            initCarousel('.certificacoes__grid', '.certificacoes__btn--prev', '.certificacoes__btn--next', 348);
+            initCarousel('.projects__grid', '.projects__btn--prev', '.projects__btn--next', 360);
         })();
     </script>
 
