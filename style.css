@@ -880,3 +880,110 @@ section {
         margin-top: 24px;
     }
 }
+
+/* ==========================================================
+   PROJETOS CARROSSEL
+   ========================================================== */
+.projects__carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.projects__grid {
+    display: flex;
+    justify-content: flex-start;
+    gap: 28px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.projects__grid::-webkit-scrollbar {
+    display: none;
+}
+
+.projects__grid .card {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    max-width: 360px;
+    width: 100%;
+}
+
+.projects__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.projects__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--color-bg-white);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-full, 50%);
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+    transition: background var(--transition-speed) ease,
+                color var(--transition-speed) ease,
+                transform var(--transition-speed) ease;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.projects__btn:hover:not(:disabled) {
+    background: var(--color-primary);
+    color: var(--color-bg-white);
+    transform: scale(1.1);
+}
+
+.projects__btn:focus-visible {
+    box-shadow: 0 0 0 3px var(--color-primary-light, rgba(37, 99, 235, 0.3));
+}
+
+.projects__btn:disabled {
+    cursor: default;
+    opacity: 0.35;
+    border-color: #cbd5e1;
+    color: #94a3b8;
+}
+
+/* Ajuste para cards dentro do carrossel manterem altura */
+.projects__grid .card {
+    min-height: 380px;
+}
+
+@media (max-width: 768px) {
+    .projects__grid {
+        gap: 20px;
+    }
+
+    .projects__grid .card {
+        max-width: 300px;
+        min-height: auto;
+    }
+
+    .projects__btn {
+        width: 44px;
+        height: 44px;
+        font-size: 1.5rem;
+    }
+
+    .projects__controls {
+        margin-top: 24px;
+    }
+}
