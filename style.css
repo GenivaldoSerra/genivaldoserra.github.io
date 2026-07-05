@@ -353,16 +353,6 @@ section {
     50%       { transform: translateY(-10px); }
 }
 
-.hero__code-block {
-    font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
-    line-height: 1.8;
-    padding: 20px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
 .code-line {
     display: block;
     color: rgba(255, 255, 255, 0.75);
@@ -370,6 +360,12 @@ section {
 
 .code-keyword { color: #FF79C6; }
 .code-fn      { color: #50FA7B; }
+
+.hero__devops-svg {
+    display: block;
+    max-width: 80%;
+    height: auto;
+}
 
 /* Scroll indicator */
 .hero__scroll-indicator {
