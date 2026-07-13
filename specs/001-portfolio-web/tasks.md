@@ -103,11 +103,13 @@
 ## Implementation Strategy
 
 ### MVP First (User Story 1 Only)
+
 1. Complete Foundational CSS.
 2. Complete US1 (Navbar + Hero).
 3. Validate locally.
 
 ### Incremental Delivery
+
 1. Add Data Engineering section and CSS Grid (US2).
 2. Add DevOps section (US3).
 3. Add Footer (US4).

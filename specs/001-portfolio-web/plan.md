@@ -30,7 +30,7 @@ Desenvolvimento de um portfólio web responsivo em página única (HTML/CSS puro
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+_GATE: Must pass before Phase 0 research. Re-check after Phase 1 design._
 
 - [x] Arquitetura estática: Apenas HTML/CSS (sem dependências externas)
 - [x] Responsividade: Uso de Flexbox/Grid e abordagem mobile-first
@@ -43,11 +43,11 @@ Desenvolvimento de um portfólio web responsivo em página única (HTML/CSS puro
 
 ```text
 specs/001-portfolio-web/
-├── plan.md              
-├── research.md          
-├── data-model.md        
-├── quickstart.md        
-└── tasks.md             
+├── plan.md
+├── research.md
+├── data-model.md
+├── quickstart.md
+└── tasks.md
 ```
 
 ### Source Code (repository root)

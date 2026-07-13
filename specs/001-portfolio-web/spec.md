@@ -8,7 +8,7 @@
 
 **Input**: User description: "crie a especificação baseada no PRD.md"
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Apresentação Pessoal e Navegação (Priority: P1)
 
@@ -71,7 +71,7 @@ Como um recrutador interessado, eu quero encontrar facilmente links para email e
 - O que acontece se a tela for visualizada em um dispositivo muito estreito? O layout deve se adaptar sem cortar conteúdo, evitando rolagem horizontal.
 - O que acontece caso o visitante tente navegar utilizando o teclado (Acessibilidade)? A ordem de foco e as âncoras da página devem funcionar adequadamente.
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 ### Functional Requirements
 
@@ -86,7 +86,7 @@ Como um recrutador interessado, eu quero encontrar facilmente links para email e
 
 - **Projeto**: Elemento visual em formato de cartão contendo título, descrição curta, destaques de habilidades e o link de referência externa.
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 ### Measurable Outcomes
 
