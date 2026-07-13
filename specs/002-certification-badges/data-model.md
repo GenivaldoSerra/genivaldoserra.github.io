@@ -9,15 +9,15 @@
 
 Representa uma credencial profissional exibida na seção de certificações do portfólio.
 
-| Campo           | Tipo    | Obrigatório | Descrição                                              | Exemplo                                              |
-|-----------------|---------|-------------|--------------------------------------------------------|------------------------------------------------------|
-| `id`            | string  | ✅ Sim      | Identificador único para o elemento HTML (`id="cert-..."`) | `"cert-aws-cloud-practitioner"`                  |
-| `nome`          | string  | ✅ Sim      | Nome completo da certificação                          | `"AWS Certified Cloud Practitioner"`                 |
-| `emissor`       | string  | ✅ Sim      | Organização emissora da certificação                   | `"Amazon Web Services"`                              |
-| `badge_src`     | string  | ✅ Sim      | Caminho relativo para o arquivo de imagem do badge     | `"assets/badges/aws-cloud-practitioner.webp"`        |
-| `badge_alt`     | string  | ✅ Sim      | Texto alternativo descritivo para acessibilidade/SEO   | `"Badge de certificação: AWS Certified Cloud Practitioner — Amazon Web Services"` |
-| `verificar_url` | string  | ❌ Opcional | URL de verificação oficial (Credly, AWS, Google, etc.) | `"https://www.credly.com/badges/..."`               |
-| `ano`           | number  | ❌ Opcional | Ano de obtenção da certificação                        | `2024`                                               |
+| Campo           | Tipo   | Obrigatório | Descrição                                                  | Exemplo                                                                           |
+| --------------- | ------ | ----------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `id`            | string | ✅ Sim      | Identificador único para o elemento HTML (`id="cert-..."`) | `"cert-aws-cloud-practitioner"`                                                   |
+| `nome`          | string | ✅ Sim      | Nome completo da certificação                              | `"AWS Certified Cloud Practitioner"`                                              |
+| `emissor`       | string | ✅ Sim      | Organização emissora da certificação                       | `"Amazon Web Services"`                                                           |
+| `badge_src`     | string | ✅ Sim      | Caminho relativo para o arquivo de imagem do badge         | `"assets/badges/aws-cloud-practitioner.webp"`                                     |
+| `badge_alt`     | string | ✅ Sim      | Texto alternativo descritivo para acessibilidade/SEO       | `"Badge de certificação: AWS Certified Cloud Practitioner — Amazon Web Services"` |
+| `verificar_url` | string | ❌ Opcional | URL de verificação oficial (Credly, AWS, Google, etc.)     | `"https://www.credly.com/badges/..."`                                             |
+| `ano`           | number | ❌ Opcional | Ano de obtenção da certificação                            | `2024`                                                                            |
 
 ### Regras de Validação
 
@@ -34,13 +34,13 @@ Representa uma credencial profissional exibida na seção de certificações do 
 Container visual que organiza as certificações. Não é uma entidade de dados persistida — é
 definida exclusivamente por CSS.
 
-| Propriedade         | Valor                              | Descrição                                     |
-|---------------------|------------------------------------|-----------------------------------------------|
-| Layout              | CSS Grid `auto-fill minmax(160px)` | Responsivo, sem breakpoints fixos de colunas  |
-| Gap entre cards     | `24px`                             | Consistente com o restante do portfólio       |
-| Alinhamento interno | `stretch`                          | Cards de mesma altura em cada linha           |
-| Breakpoint tablet   | ≤ 900px → mínimo 2 colunas        | Via `minmax` automático                       |
-| Breakpoint mobile   | ≤ 600px → mínimo 1 coluna         | Via `minmax(140px, 1fr)`                      |
+| Propriedade         | Valor                              | Descrição                                    |
+| ------------------- | ---------------------------------- | -------------------------------------------- |
+| Layout              | CSS Grid `auto-fill minmax(160px)` | Responsivo, sem breakpoints fixos de colunas |
+| Gap entre cards     | `24px`                             | Consistente com o restante do portfólio      |
+| Alinhamento interno | `stretch`                          | Cards de mesma altura em cada linha          |
+| Breakpoint tablet   | ≤ 900px → mínimo 2 colunas         | Via `minmax` automático                      |
+| Breakpoint mobile   | ≤ 600px → mínimo 1 coluna          | Via `minmax(140px, 1fr)`                     |
 
 ---
 
@@ -59,6 +59,7 @@ assets/
 `[emissor-abreviado]-[nome-da-cert-kebab-case].[ext]`
 
 Exemplos:
+
 - `aws-cloud-practitioner.webp`
 - `gcp-associate-cloud-engineer.webp`
 - `cncf-ckad.webp`

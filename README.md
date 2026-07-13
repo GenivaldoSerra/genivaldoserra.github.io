@@ -32,9 +32,9 @@ xdg-open index.html # Linux
 
 ## Paleta de Cores
 
-| Cor | Hex | Uso |
-|-----|-----|-----|
-| Verde Vibrante | `#00D84F` | Destaque, botões, CTA |
-| Verde Escuro | `#00A836` | Hover |
-| Verde Light | `#E8F9F0` | Fundos de seção e tags |
-| Cinza Escuro | `#1A1A1A` | Texto principal |
+| Cor            | Hex       | Uso                    |
+| -------------- | --------- | ---------------------- |
+| Verde Vibrante | `#00D84F` | Destaque, botões, CTA  |
+| Verde Escuro   | `#00A836` | Hover                  |
+| Verde Light    | `#E8F9F0` | Fundos de seção e tags |
+| Cinza Escuro   | `#1A1A1A` | Texto principal        |

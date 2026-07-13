@@ -33,7 +33,7 @@ será inserida entre DevOps e Contato, com âncora no menu de navegação.
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+_GATE: Must pass before Phase 0 research. Re-check after Phase 1 design._
 
 - [x] Arquitetura estática: Apenas HTML/CSS (sem dependências externas)
 - [x] Responsividade: Uso de Flexbox/Grid e abordagem mobile-first (`auto-fill minmax`)
@@ -41,7 +41,7 @@ será inserida entre DevOps e Contato, com âncora no menu de navegação.
 - [x] Performance: Arquivos otimizados (< 1MB) e requisições minimizadas (`loading="lazy"`)
 - [x] Certificações: Badges com alt text descritivo, grid responsivo e assets em `assets/badges/`
 
-*Todos os gates aprovados. Sem violações a justificar.*
+_Todos os gates aprovados. Sem violações a justificar._
 
 ## Project Structure
 
@@ -91,45 +91,45 @@ Posição: após `</section>` da seção DevOps, antes da seção Contato.
 ```html
 <!-- ========== CERTIFICAÇÕES ========== -->
 <section class="cert" id="certificacoes" aria-labelledby="cert-title">
-    <div class="container">
-        <div class="section-header">
-            <div class="section-header__badge">Certificações</div>
-            <h2 class="section-header__title" id="cert-title">Credenciais & Badges</h2>
-            <p class="section-header__desc">
-                Certificações profissionais que validam minha expertise em Cloud e DevOps.
-            </p>
-        </div>
-        <div class="cert__grid">
-            <!-- Padrão de card de badge -->
-            <article class="cert-card" id="cert-aws-cloud-practitioner">
-                <div class="cert-card__badge-wrap">
-                    <img
-                        src="assets/badges/aws-cloud-practitioner.webp"
-                        alt="Badge de certificação: AWS Certified Cloud Practitioner — Amazon Web Services"
-                        class="cert-card__badge-img"
-                        width="100"
-                        height="100"
-                        loading="lazy"
-                    >
-                </div>
-                <div class="cert-card__info">
-                    <h3 class="cert-card__name">AWS Certified Cloud Practitioner</h3>
-                    <p class="cert-card__issuer">Amazon Web Services</p>
-                </div>
-                <!-- Incluir apenas quando verificar_url existir -->
-                <a
-                    href="https://www.credly.com/badges/..."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="cert-card__verify"
-                    aria-label="Verificar certificação AWS Certified Cloud Practitioner no Credly"
-                >
-                    Verificar →
-                </a>
-            </article>
-            <!-- Repetir article.cert-card para cada certificação -->
-        </div>
+  <div class="container">
+    <div class="section-header">
+      <div class="section-header__badge">Certificações</div>
+      <h2 class="section-header__title" id="cert-title">Credenciais & Badges</h2>
+      <p class="section-header__desc">
+        Certificações profissionais que validam minha expertise em Cloud e DevOps.
+      </p>
     </div>
+    <div class="cert__grid">
+      <!-- Padrão de card de badge -->
+      <article class="cert-card" id="cert-aws-cloud-practitioner">
+        <div class="cert-card__badge-wrap">
+          <img
+            src="assets/badges/aws-cloud-practitioner.webp"
+            alt="Badge de certificação: AWS Certified Cloud Practitioner — Amazon Web Services"
+            class="cert-card__badge-img"
+            width="100"
+            height="100"
+            loading="lazy"
+          />
+        </div>
+        <div class="cert-card__info">
+          <h3 class="cert-card__name">AWS Certified Cloud Practitioner</h3>
+          <p class="cert-card__issuer">Amazon Web Services</p>
+        </div>
+        <!-- Incluir apenas quando verificar_url existir -->
+        <a
+          href="https://www.credly.com/badges/..."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="cert-card__verify"
+          aria-label="Verificar certificação AWS Certified Cloud Practitioner no Credly"
+        >
+          Verificar →
+        </a>
+      </article>
+      <!-- Repetir article.cert-card para cada certificação -->
+    </div>
+  </div>
 </section>
 ```
 
@@ -138,94 +138,97 @@ Posição: após `</section>` da seção DevOps, antes da seção Contato.
 ```css
 /* Seção Certificações */
 .cert {
-    background: var(--color-bg-white);
+  background: var(--color-bg-white);
 }
 
 /* Grid responsivo de badges */
 .cert__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 24px;
 }
 
 /* Card individual de certificação */
 .cert-card {
-    background: var(--color-card-bg);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: 24px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    text-align: center;
-    box-shadow: var(--shadow-card);
-    transition: transform var(--transition-speed) ease,
-                box-shadow var(--transition-speed) ease;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  transition:
+    transform var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
 }
 
 .cert-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
 }
 
 /* Container da imagem do badge */
 .cert-card__badge-wrap {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Imagem do badge */
 .cert-card__badge-img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    border-radius: var(--radius-sm);
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
 }
 
 /* Área de texto */
 .cert-card__info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 /* Nome da certificação */
 .cert-card__name {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--color-text-main);
-    line-height: 1.3;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  line-height: 1.3;
 }
 
 /* Emissor */
 .cert-card__issuer {
-    font-size: 0.78rem;
-    color: var(--color-text-muted);
-    font-weight: 500;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
 }
 
 /* Link de verificação */
 .cert-card__verify {
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--color-primary);
-    transition: color var(--transition-speed), gap var(--transition-speed);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  transition:
+    color var(--transition-speed),
+    gap var(--transition-speed);
 }
 
 .cert-card__verify:hover {
-    color: var(--color-primary-dark);
+  color: var(--color-primary-dark);
 }
 
 /* Responsividade */
 @media (max-width: 600px) {
-    .cert__grid {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    }
+  .cert__grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
 }
 ```
 

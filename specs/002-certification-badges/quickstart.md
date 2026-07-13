@@ -33,6 +33,7 @@ python3 -m http.server 8080
 ```
 
 **Resultado esperado**:
+
 - Seção "Certificações" visível na página
 - Ao menos um badge renderizado com imagem e texto
 - Nenhum erro no console do navegador (F12 → Console)
@@ -48,6 +49,7 @@ python3 -m http.server 8080
 3. Observar o scroll da página
 
 **Resultado esperado**:
+
 - A página rola suavemente até a seção `#certificacoes`
 - O scroll é animado (não instantâneo) — comportamento herdado do `scroll-behavior: smooth`
 
@@ -60,7 +62,7 @@ python3 -m http.server 8080
 No navegador, abrir DevTools (F12) → aba "Responsive" ou "Device Toolbar":
 
 | Largura de Tela | Comportamento Esperado                  |
-|-----------------|-----------------------------------------|
+| --------------- | --------------------------------------- |
 | 1200px+         | 4 colunas de badges (ou `auto-fill`)    |
 | 900px           | 3 colunas de badges                     |
 | 600px           | 2 colunas de badges                     |
@@ -81,7 +83,7 @@ No navegador, abrir DevTools (F12) → Console:
 ```javascript
 // Verificar se alguma imagem de badge está sem alt text
 const badges = document.querySelectorAll('.cert-card__badge-img');
-const semAlt = [...badges].filter(img => !img.alt || img.alt.trim() === '');
+const semAlt = [...badges].filter((img) => !img.alt || img.alt.trim() === '');
 console.log('Badges sem alt text:', semAlt.length);
 // Resultado esperado: 0
 ```
@@ -96,6 +98,7 @@ Alternativamente, inspecionar o HTML de cada `<img>` na seção e confirmar o pa
 **Cenário**: Links de verificação abrem em nova aba.
 
 Para cada badge que possua link de verificação:
+
 1. Clicar no botão "Verificar →"
 2. Confirmar que abre em **nova aba** (não na mesma aba)
 3. Confirmar que a URL de verificação carrega corretamente

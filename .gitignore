@@ -9,3 +9,5 @@ node_modules/
 .agents/
 .specify/
 .kimchi/
+coverage
+dist

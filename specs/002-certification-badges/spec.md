@@ -8,7 +8,7 @@
 
 **Input**: User description: "gostaria de adicionar um espaço para as minhas certificações, mostrar as badges tipo da cloud practitioner e outras"
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Visualizar Certificações ao Navegar no Portfólio (Priority: P1)
 
@@ -77,7 +77,7 @@ rola suavemente até a seção de certificações.
 - O que acontece se o link de verificação estiver quebrado ou expirado? O link deve ser opcional e
   a ausência de link não impacta a exibição do badge.
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 ### Functional Requirements
 
@@ -103,7 +103,7 @@ rola suavemente até a seção de certificações.
   imagem do badge (local), URL de verificação (opcional), ano de obtenção (opcional).
 - **Grid de Badges**: Contêiner visual que organiza as certificações em layout de grade responsiva.
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 ### Measurable Outcomes
 
